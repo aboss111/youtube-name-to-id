@@ -16,7 +16,7 @@ function getAPI() {
     var channelName = document.getElementById('channel_name').value;
     var userID = document.getElementById('user_id');
 
-    fetch('https://www.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&forUsername='+channelName+'&key=AIzaSyC7XACVZdLgWcicnkWpbP_adG0mXhmdmkI')
+    fetch('https://www.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&forUsername='+channelName+'&key=insert_api_key')
         .then(response => {
             return response.json();
         })
